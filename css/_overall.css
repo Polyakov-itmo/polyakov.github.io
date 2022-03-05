@@ -1,4 +1,3 @@
-@import "_vars.css";
 .container {
 	max-width: 1626px;
 	padding: 0 30px;
@@ -31,7 +30,7 @@ input[type="search"]::-webkit-search-results-decoration {
 	font-weight: 700;
 	font-size: 64px;
 	line-height: 80px;
-	color: var(--dark-color);
+	color: rgb(0,0,0);
 }
 
 .section-title--center {
@@ -45,6 +44,6 @@ input[type="search"]::-webkit-search-results-decoration {
 	letter-spacing: 2.18182px;
 	text-transform: uppercase;
 	border-radius: 8px;
-	color: var(--white-color);
+	color: rgb(255,255,255);
 	padding: 33px 80px;
 }
