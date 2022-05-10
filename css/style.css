@@ -1,6 +1,6 @@
-@import "settings/_global.css";
-@import "settings/_global.css";
-@import "settings/_overall.css";
+@import "settings/global.css";
+@import "settings/normalize.css";
+@import "settings/overall.css";
 
 /* components imports */
 @import "components/header.css";
