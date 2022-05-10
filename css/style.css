@@ -1,51 +1,23 @@
-.main {
-	height: 100%;
-	background: url("../img/bg1.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+@import "_normalize.css";
+@import "_fonts.css";
+@import "_variables.css";
+@import "_vendor.css";
+@import "_global.css";
+@import "_overall.css";
 
-.menu {
-	position: fixed;
-	height: 100vh;
-	width: 350px;
-	background-color: var(--white-color);
-}
-
-.profile {
-	height: 250px;
-	margin: 30px;
-	background: url("../img/me.jpeg");
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-	border-radius: 20px;
-	border: 2px solid black;
-}
-
-.menu-tasks {
-	margin-top: 20px;
-	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.menu-title {
-	font-size: 32px;
-	color: rgba(0, 0, 0, 0.5);
-	cursor: default;
-}
-
-.link {
-	font-size: 22px;
-}
-
-.link:hover {
-	background-color: rgb(0,0,0);
-	color: rgb(255,255,255;
-}
-
-.menu-tasks__item-link {
-	display: block;
-	padding: 5px 20px;
-	width: 100%;
-}
+/* components imports */
+@import "./components/header.css";
+@import "./components/profile.css";
+@import "./components/content.css";
+@import "./components/education.css";
+@import "./components/experience.css";
+@import "./components/skills.css";
+@import "./components/programms.css";
+@import "./components/footer.css";
+/* @import "./components/_first.css";
+@import "./components/_become.css";
+@import "./components/_featured.css";
+@import "./components/_slider.css";
+@import "./components/_newsletter.css";
+@import "./components/_insp.css";
+@import "./components/_footer.css"; */

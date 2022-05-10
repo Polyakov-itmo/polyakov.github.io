@@ -1,0 +1,97 @@
+.education {
+  display: block;
+  width: 95%;
+  color: black;
+  margin: 20px auto;
+  background-color: black;
+  box-shadow: 0 0 20px black;
+}
+
+.universities {
+  padding: 30px;
+}
+
+.university {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  align-items: center;
+  font-family: "Archivo Black", sans-serif;
+  margin: 0 0 30px 0;
+}
+
+.university:not(:last-child) {
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgb(60, 250, 60);
+}
+
+.education-title {
+  color: white;
+
+  /* position: relative; */
+}
+/* 
+.education-title::before {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  color: rgb(60, 250, 60);
+
+  content: "Education";
+}
+
+.education-title::after {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  content: "Education";
+  color: black;
+}
+ */
+.uni-logo {
+  background-position: center center;
+  background-size: cover;
+  width: 90px;
+  height: 60px;
+  border-radius: 15px;
+  margin: 0 15px 0 0;
+}
+
+.itmo-logo {
+  background-image: url("/images/itmo-logo.png");
+}
+
+.usatu-logo {
+  background-image: url("/images/usatu-logo.png");
+}
+
+.years {
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid rgb(60, 250, 60);
+  color: rgb(60, 250, 60);
+  margin: 0 15px 0 0;
+}
+
+.uni-name {
+  font-style: 2em;
+}
+
+.uni-direction {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  width: 100%;
+  margin: 20px 0 0 0;
+  font-size: 1em;
+}
+
+.point {
+  color: rgb(60, 250, 60);
+}
+.edu-link {
+  text-decoration: underline;
+  transition: color 0.5s;
+}
+
+.edu-link:hover {
+  color: rgb(194, 194, 194);
+}

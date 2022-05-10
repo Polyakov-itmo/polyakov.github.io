@@ -1,41 +1,253 @@
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Поляков М.Ю.</title>
-		<link href="css/style.css" rel="stylesheet" />
-		<link href="css/_vars.css" rel="stylesheet" />
-		<link href="css/_overall.css" rel="stylesheet" />
-		<link href="css/_norm.css" rel="stylesheet" />
-		<link href="css/_global.css" rel="stylesheet" />
-	</head>
-	<body>
-		<div class="site-container">
-			<div class="main">
-				<div class="container">
-					<div class="menu glass">
-						<div class="profile"></div>
-						<ul class="menu-tasks">
-							<li class="menu-title">
-								<div class="menu-tasks__item-link" href="#">Задания</div>
-							</li>
-							<li class="link">
-								<a class="menu-tasks__item-link" href="xml/task1.xml"
-									>Задание 1</a
-								>
-							</li>
-							<li class="link">
-								<a class="menu-tasks__item-link" href="xml/task2.xml"
-									>Задание 2</a
-								>
-							</li>
-							<li class="link">
-								<a class="menu-tasks__item-link" href="login.html">Задание 3</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@200&family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>cv</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="profile-hide" class="header-left-hider">
+        <!-- <span class="header-left-hider-title"></span> -->
+      </div>
+      <div id="profile" class="header-left">
+        <div class="profile">
+          <div class="profile-image">
+            <img
+              class="profile-avatar"
+              src="/images/avatar1.jpg"
+              alt="аватарка"
+            />
+          </div>
+          <div class="profile-content">
+            <p class="profile-position">FullStack developer</p>
+            <p class="profile-status">MIDDLE</p>
+            <p class="profile-name name-en">Polyakov Maxim Yurievich</p>
+            <p class="profile-name name-ru">Поляков Максим Юрьевич</p>
+            <p class="profile-about">
+              Привет! Меня зовут Максим, можно просто Макс или Макес.
+              Специализируюсь на веб-разработке, как front-end, так и back-end.
+              За плечами не один год коммерческой разработки и уже 3 года
+              свободной профессиональной деятельности.<br /><br />
+              Могу спроектироваить и сделать сайт, приложение, SPA. Кроме того
+              занимаюсь дизайном и делаю макеты на любой вкус.
+            </p>
+            <ul class="social-list">
+              <li>
+                <a href="https://vk.com/maksmeksmeksort">
+                  <img class="social-img" src="/images/vk.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img class="social-img" src="/images/instagram.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/"
+                  ><img class="social-img" src="/images/github.svg" alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Makesmeks">
+                  <img class="social-img" src="/images/tg.svg" />
+                </a>
+              </li>
+            </ul>
+            <span class="social-mail">winnden90@gmail.com</span>
+          </div>
+        </div>
+        <button id="swipeProfile" class="swipe-profile-btn btn">&#8249;</button>
+      </div>
+      <div id="content" class="header-right">
+        <section class="education">
+          <p id="section-name" class="section-title education-title">
+            Education
+          </p>
+          <div class="universities">
+            <div class="university">
+              <span class="years">2021 - 2023</span>
+              <span class="uni-name">ITMO University</span>
+              <p class="uni-direction">
+                <span class="point">Faculty: </span>Software engineering and
+                computer technology<br />
+                <span class="point">Department: </span>Computer engineering and
+                design<br />
+                <span class="point">Direction: </span>Web technologies<br />
+                <span class="point">Link: </span
+                ><a class="edu-link" href="https://itmo.ru/ru/">itmo.ru</a>
+              </p>
+            </div>
+
+            <div class="university">
+              <span class="years">2017 - 2021</span>
+              <span class="uni-name">USATU</span>
+              <p class="uni-direction">
+                <span class="point">Faculty: </span>Informatics and Robotics<br /><span
+                  class="point"
+                  >Department: </span
+                >Automated Control Systems<br />
+                <span class="point">Direction: </span>Informatics and Computer
+                Engineering
+                <br />
+                <span class="point">Link: </span
+                ><a class="edu-link" href="https://ugatu.su/">usatu.ru</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="experience">
+          <p id="section-name" class="section-title experience-title">
+            Experience
+          </p>
+
+          <div class="work-places">
+            <div class="place">
+              <span class="years">2021.02 - current day</span>
+              <div class="place-name">OZNA group</div>
+              <p class="uni-direction">
+                <span class="point">Position: </span>FullStack developer<br /><span
+                  class="point"
+                  >Tasks:
+                </span>
+              </p>
+              <ul class="place-list">
+                <li>
+                  Team development of user interfaces for software designed to
+                  monitor the technological processes of oil and gas equipment;
+                </li>
+                <li>
+                  Team development of web applications (Front&Back-end) for oil
+                  companies;
+                </li>
+                <li>
+                  Preparation of documentation and user manuals for the
+                  company's products;
+                </li>
+                <li>Refactoring and reengineering of software;</li>
+                <li>Refactoring of legacy code;</li>
+                <li>Creation and Editing of svg maps;</li>
+                <li>
+                  Search and testing programs for modeling chemical processes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills">
+          <p id="section-name" class="section-title skills-title">
+            Hard Skills
+          </p>
+          <div class="blocks">
+            <div class="block-techs">
+              <span class="block-techs-title">Languages</span>
+              <ul class="techs-list">
+                <li>HTML + CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>Python</li>
+                <li>C++</li>
+              </ul>
+            </div>
+            <div class="block-techs">
+              <span class="block-techs-title">Fraeworks</span>
+              <ul class="techs-list">
+                <li>React</li>
+                <li>Vue</li>
+                <li>Django</li>
+              </ul>
+            </div>
+            <div class="block-techs">
+              <span class="block-techs-title">Libraries</span>
+              <ul class="techs-list">
+                <li>AgGrid</li>
+                <li>HighCharts</li>
+                <li>MUI</li>
+                <li>GoogleAuth</li>
+                <li>Express</li>
+                <li>KOA</li>
+                <li>Cors</li>
+                <li>Redux</li>
+                <li>JQuery</li>
+              </ul>
+            </div>
+            <div class="block-techs">
+              <span class="block-techs-title">Technologies</span>
+              <ul class="techs-list">
+                <li>NodeJS</li>
+                <li>Docker</li>
+                <li>WebPack</li>
+                <li>Babel</li>
+                <li>Electron</li>
+              </ul>
+            </div>
+            <div class="block-techs">
+              <span class="block-techs-title">DB's</span>
+              <ul class="techs-list">
+                <li>Redis</li>
+                <li>MongoDB</li>
+                <li>MySQL</li>
+                <li>MS SQL Server</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="programms">
+          <p id="section-name" class="section-title programms-title">
+            Programs I use
+          </p>
+          <div class="prog-blocks">
+            <div class="programm">
+              <img
+                class="prog-logo"
+                src="/images/photoshop.svg"
+                alt="Adobe Photoshop"
+              />
+              <div class="prog-name">Adobe Photoshop</div>
+            </div>
+            <div class="programm">
+              <img
+                class="prog-logo"
+                src="/images/illustrator.svg"
+                alt="Adobe Illustrator"
+              />
+              <div class="prog-name">Adobe Illustrator</div>
+            </div>
+            <div class="programm">
+              <img class="prog-logo" src="/images/xd.svg" alt="Adobe XD" />
+              <div class="prog-name">Adobe XD</div>
+            </div>
+            <div class="programm">
+              <img class="prog-logo" src="/images/figma.svg" alt="Figma" />
+              <div class="prog-name">Figma</div>
+            </div>
+            <div class="programm">
+              <img class="prog-logo" src="/images/vscode.svg" alt="VS Code" />
+              <div class="prog-name">VS Code</div>
+            </div>
+            <div class="programm">
+              <img class="prog-logo" src="/images/vs.svg" alt="Visual Studio" />
+              <div class="prog-name">Visual Studio</div>
+            </div>
+          </div>
+        </section>
+        <section class="footer">
+          <h4 class="footer-title">Thank's!</h4>
+          <button id="contacts" class="btn-contacts">show contacts</button>
+        </section>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

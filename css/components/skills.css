@@ -1,0 +1,47 @@
+.skills {
+  padding: 30px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+}
+
+.block-techs {
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 240px;
+  margin: 20px;
+  box-shadow: 0px 0px 20px white;
+}
+
+.block-techs-title {
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  display: block;
+  border-radius: 10px 10px 0 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.techs-list {
+  margin: 20px;
+}
+
+.techs-list li {
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+}
+
+.skills-title {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,97 @@
+.header-left {
+  width: 31%;
+  height: 100%;
+  background: rgba(0, 0, 0, 1);
+  position: relative;
+  transition: width 0.7s;
+}
+
+.header-left-hider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  background: black;
+  height: 100%;
+  z-index: 100;
+  transition: width 0.7s;
+  cursor: pointer;
+}
+
+/* .header-left-hider-title {
+} */
+
+.header-right {
+  width: 69%;
+  height: 100%;
+  background: white;
+  transition: width 0.7s;
+  overflow-y: scroll;
+}
+
+.swipe-profile-btn {
+  display: none;
+  position: absolute;
+  left: 99%;
+  top: calc(50% - 30px);
+  height: 60px;
+  width: 30px;
+  border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+  color: white;
+  background: #000;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 24px;
+}
+
+.swipe-profile-btn:hover {
+  color: rgb(60, 250, 60);
+}
+
+/* .social {
+  background: white;
+  width: 100%;
+}
+ */
+.social-list {
+  padding: 50px 0 0 0;
+  display: flex;
+  width: 300px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.social-list li a {
+  cursor: pointer;
+}
+
+.social-img {
+  width: 40px;
+  height: auto;
+  border-radius: 50%;
+  transition: box-shadow 0.5s;
+}
+
+.social-img:hover {
+  /* box-shadow: 0 0 20px rgb(60, 250, 60); */
+  box-shadow: 0 0 30px white;
+}
+
+.social-mail {
+font-family: 'Lexend Deca', sans-serif;
+/* font-family: "Raleway", sans-serif; */
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  color: rgb(172, 172, 172);
+  font-size: 0.8em;
+  text-decoration: underline;
+}
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Plus Jakarta Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto Flex', sans-serif; 
+*/

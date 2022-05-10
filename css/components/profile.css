@@ -1,0 +1,79 @@
+.profile {
+  height: 100%;
+  font-family: "Archivo Black", sans-serif;
+  overflow: hidden;
+}
+
+.profile-image {
+  height: 30%;
+  overflow: hidden;
+}
+
+.profile-avatar {
+  width: 100%;
+  /* position: relative; */
+}
+
+.profile-avatar::before {
+  content: "asss";
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.profile-content {
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-position {
+  color: white;
+  font-size: 1.6em;
+  margin: 0 15px 0 0;
+}
+
+.profile-status {
+  font-size: 0.7em;
+  margin: 5px 0 0 0;
+  height: 1.5em;
+  color: rgb(60, 250, 60);
+  border-radius: 5px;
+  padding: 4px;
+  border: 1px solid rgb(60, 250, 60);
+  display: block;
+  line-height: 1;
+}
+
+.profile-name {
+  margin: 7px 0 0 0;
+  width: 100%;
+  color: white;
+}
+
+.name-ru {
+  font-size: 1.1em;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+.name-en {
+  font-size: 1.1em;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.profile-about {
+  margin: 25px 0 0 0;
+  font-size: 0.75em;
+  /* font-family: 'Montserrat', sans-serif; */
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-align: justify;
+}
+
+/* 
+font-family: 'Plus Jakarta Sans', sans-serif;
+
+ */
