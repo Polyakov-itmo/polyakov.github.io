@@ -58,11 +58,11 @@
 }
 
 .itmo-logo {
-  background-image: url("/images/itmo-logo.png");
+  background-image: url("images/itmo-logo.png");
 }
 
 .usatu-logo {
-  background-image: url("/images/usatu-logo.png");
+  background-image: url("images/usatu-logo.png");
 }
 
 .years {
