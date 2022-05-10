@@ -5,13 +5,12 @@
 }
 
 .profile-image {
-  height: 30%;
+  height: 350px;
   overflow: hidden;
 }
 
 .profile-avatar {
   width: 100%;
-  /* position: relative; */
 }
 
 .profile-avatar::before {
