@@ -1,0 +1,9 @@
+@media screen and (max-width: 950px) {
+  .university {
+    display: block;
+    margin-bottom: 80px;
+  }
+  .university__2 {
+    border: none;
+  }
+}

@@ -1,13 +1,26 @@
-@import "settings/global.css";
-@import "settings/normalize.css";
-@import "settings/overall.css";
+@import 'settings/global.css';
+@import 'settings/normalize.css';
+@import 'settings/overall.css';
 
 /* components imports */
-@import "components/header.css";
-@import "components/profile.css";
-@import "components/content.css";
-@import "components/education.css";
-@import "components/experience.css";
-@import "components/skills.css";
-@import "components/programms.css";
-@import "components/footer.css";
+@import 'components/header.css';
+@import 'components/hero.css';
+@import 'components/profile.css';
+@import 'components/experience.css';
+@import 'components/education.css';
+@import 'components/footer.css';
+@import 'media/screen.css';
+/* @import 'components/header.css';
+@import 'components/profile.css';
+@import 'components/content.css';
+@import 'components/education.css';
+@import 'components/experience.css';
+@import 'components/skills.css';
+@import 'components/programms.css';
+@import 'components/footer.css'; */
+
+html[data-theme='dark'] {
+}
+
+html[data-theme='light'] {
+}

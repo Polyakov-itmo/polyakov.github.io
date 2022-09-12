@@ -1,286 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lexend+Deca:wght@200&family=Montserrat:wght@300&family=Plus+Jakarta+Sans:wght@300&family=Raleway:wght@100;200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
-      rel="stylesheet"
-    />
-    <title>cv</title>
+
+    <title>Resume</title>
   </head>
   <body>
-    <div class="container">
-      <div id="profile-hide" class="header-left-hider">
-        <!-- <span class="header-left-hider-title"></span> -->
-      </div>
-      <div id="profile" class="header-left">
-        <div class="profile">
-          <div class="profile-image">
-            <img
-              class="profile-avatar"
-              src="images/avatar2.jpg"
-              alt="аватарка"
-            />
-          </div>
-          <div class="profile-content">
-            <p class="profile-position">FullStack developer</p>
-            <p class="profile-status">MIDDLE</p>
-            <p class="profile-name name-en">Polyakov Maxim Yurievich</p>
-            <p class="profile-name name-ru">Поляков Максим Юрьевич</p>
-            <p class="profile-about">
-              Привет! Меня зовут Максим, можно просто Макс или Макес.
-              Специализируюсь на веб-разработке, как front-end, так и back-end.
-              За плечами не один год коммерческой разработки и уже 3 года
-              свободной профессиональной деятельности.<br /><br />
-              Могу спроектироваить и сделать сайт, приложение, SPA. Кроме того
-              занимаюсь дизайном и делаю макеты на любой вкус.
-            </p>
-            <ul class="social-list">
-              <li>
-                <a href="https://vk.com/maksmeksmeksort">
-                  <img class="social-img" src="images/vk.svg" alt="" />
+    <div class="site-container">
+      <header class="header">
+        <div class="container header__container">
+          <a target="_blank" class="header__logo">Portfolio.exe</a>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#profile" class="menu__link">Profile</a>
+              </li>
+              <li class="menu__item">
+                <a href="#experience" class="menu__link">
+                  Experience
                 </a>
               </li>
-              <li>
-                <a>
-                  <img class="social-img" src="images/instagram.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/"
-                  ><img class="social-img" src="images/github.svg" alt="" />
-                </a>
-              </li>
-              <li>
-                <a href="https://t.me/Makesmeks">
-                  <img class="social-img" src="images/tg.svg" />
-                </a>
+              <li class="menu__item">
+                <a href="#education" class="menu__link">Education</a>
               </li>
             </ul>
-            <span class="social-mail">winnden90@gmail.com</span>
+          </nav>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title title">
+            I'm
+            <span class="hero__title--position">
+              FullStack developer
+            </span>
+            specialising in
+            <span class="hero__title--area">front-end</span>
+          </h1>
+        </div>
+      </section>
+      <section id="profile" class="profile">
+        <div class="container profile__container">
+          <h3 class="profile__title title">
+            <span class="profile__title--span">About me</span>
+          </h3>
+          <div class="profile__content">
+            <div class="profile__side profile__side--left">
+              <img src="img/profile_pic_2.jpg" alt="" />
+            </div>
+            <div class="profile__side profile__side--right">
+              <h1 class="profile__position">Fullstack developer</h1>
+              <span class="profile__city">Saint Petersburg</span>
+              <p class="profile__about">
+                Привет! Меня зовут Максим, можно просто Макс или Макес.
+                Специализируюсь на веб-разработке, как front-end, так и
+                back-end. За плечами не один год коммерческой разработки и уже 3
+                года свободной профессиональной деятельности.
+                <br />
+                <br />
+                Могу спроектироваить и сделать сайт, приложение, SPA. Кроме того
+                занимаюсь дизайном и делаю макеты на любой вкус.
+              </p>
+            </div>
           </div>
         </div>
-        <button id="swipeProfile" class="swipe-profile-btn btn">&#8249;</button>
-      </div>
-      <div id="content" class="header-right">
-        <section class="education">
-          <p id="section-name" class="section-title education-title">
-            Education
-          </p>
-          <div class="universities">
+      </section>
+      <section id="experience" class="experience">
+        <div class="container experience__container">
+          <h3 class="experience__title title">
+            My
+            <span class="experience__title--span">experience</span>
+          </h3>
+          <div class="experience__body">
+            <div class="experience__card card">
+              <div class="card__img card--side">
+                <img src="img/gosinfotech.png" alt="" />
+              </div>
+              <div class="card__info card--side">
+                <div class="work__company">
+                  <h3 class="work__name">
+                    GosInfoTech
+                  </h3>
+                  <a target="_blank" class="work__link" href="">
+                    <img class="work__link--img" src="/img/link.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="work__dates dates">2022.06-NOW</div>
+                <div class="work__position">Back-end developer</div>
+                <button class="btn-reset btn-tasks">
+                  view tasks
+                  <img src="" alt="" />
+                </button>
+                <ul class="work__tasks">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+            <div class="experience__card card">
+              <div class="card__img card--side">
+                <img src="img/ozna.jpg" alt="" />
+              </div>
+              <div class="card__info card--side">
+                <div class="work__company">
+                  <h3 class="work__name">
+                    OZNA group
+                  </h3>
+                  <a target="_blank" class="work__link" href="">
+                    <img class="work__link--img" src="/img/link.svg" alt="" />
+                  </a>
+                </div>
+
+                <div class="work__dates dates">2021.02-2022.06</div>
+                <div class="work__position">FullStack developer</div>
+                <button class="btn-reset btn-tasks">
+                  view tasks
+                  <img src="" alt="" />
+                </button>
+                <ul class="work__tasks">
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="education" class="education">
+        <div class="container education__container">
+          <h3 class="education__title title">
+            My
+            <span class="education__title--span">education</span>
+          </h3>
+          <div class="education__body">
             <div class="university">
-              <span class="years">2021 - 2023</span>
-              <span class="uni-name">ITMO University</span>
-              <p class="uni-direction">
-                <span class="point">Faculty: </span>Software engineering and
-                computer technology<br />
-                <span class="point">Department: </span>Computer engineering and
-                design<br />
-                <span class="point">Direction: </span>Web technologies<br />
-                <span class="point">Link: </span
-                ><a class="edu-link" href="https://itmo.ru/ru/">itmo.ru</a>
-              </p>
+              <div class="university__1">
+                <span class="university__dates dates">2021-2023</span>
+              </div>
+              <div class="university__2">
+                <h3 class="university__name">ITMO</h3>
+                <span class="university__facultet">
+                  Software engineering and computer technology
+                </span>
+                <span class="university__direction">Web technologies</span>
+              </div>
+              <div class="university__3">
+                <a target="_blank" class="university__programm--link">
+                  programm
+                </a>
+              </div>
             </div>
 
             <div class="university">
-              <span class="years">2017 - 2021</span>
-              <span class="uni-name">USATU</span>
-              <p class="uni-direction">
-                <span class="point">Faculty: </span>Informatics and Robotics<br /><span
-                  class="point"
-                  >Department: </span
-                >Automated Control Systems<br />
-                <span class="point">Direction: </span>Informatics and Computer
-                Engineering
-                <br />
-                <span class="point">Link: </span
-                ><a class="edu-link" href="https://ugatu.su/">usatu.ru</a>
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section class="experience">
-          <p id="section-name" class="section-title experience-title">
-            Experience
-          </p>
-
-          <div class="work-places">
-            <div class="place">
-              <span class="years">2022.06 - current day</span>
-              <div class="place-name">GosInfoTeck</div>
-              <p class="uni-direction">
-                <span class="point">Position: </span>Backend developer<br /><span
-                  class="point"
-                  >Tasks:
+              <div class="university__1">
+                <span class="university__dates dates">2017-2021</span>
+              </div>
+              <div class="university__2">
+                <h3 class="university__name">USATU</h3>
+                <span class="university__facultet">
+                  Informatics and Robotics
                 </span>
-              </p>
-              <ul class="place-list">
-                <li>
-                  Team development of user interfaces for software designed to
-                  monitor the technological processes of oil and gas equipment;
-                </li>
-                <li>
-                  Team development of web applications (Front&Back-end) for oil
-                  companies;
-                </li>
-                <li>
-                  Preparation of documentation and user manuals for the
-                  company's products;
-                </li>
-                <li>Refactoring and reengineering of software;</li>
-                <li>Refactoring of legacy code;</li>
-                <li>Creation and Editing of svg maps;</li>
-                <li>
-                  Search and testing programs for modeling chemical processes.
-                </li>
-              </ul>
-            </div>
-          </div>
-          
-          <div class="work-places">
-            <div class="place">
-              <span class="years">2021.02 - 2022.06</span>
-              <div class="place-name">OZNA group</div>
-              <p class="uni-direction">
-                <span class="point">Position: </span>FullStack developer<br /><span
-                  class="point"
-                  >Tasks:
+                <span class="university__direction">
+                  Informatics and Computer Engineering
                 </span>
-              </p>
-              <ul class="place-list">
-                <li>
-                  Team development of user interfaces for software designed to
-                  monitor the technological processes of oil and gas equipment;
-                </li>
-                <li>
-                  Team development of web applications (Front&Back-end) for oil
-                  companies;
-                </li>
-                <li>
-                  Preparation of documentation and user manuals for the
-                  company's products;
-                </li>
-                <li>Refactoring and reengineering of software;</li>
-                <li>Refactoring of legacy code;</li>
-                <li>Creation and Editing of svg maps;</li>
-                <li>
-                  Search and testing programs for modeling chemical processes.
-                </li>
-              </ul>
+              </div>
+              <div class="university__3">
+                <a target="_blank" class="university__programm--link">
+                  programm
+                </a>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section class="skills">
-          <p id="section-name" class="section-title skills-title">
-            Hard Skills
-          </p>
-          <div class="blocks">
-            <div class="block-techs">
-              <span class="block-techs-title">Languages</span>
-              <ul class="techs-list">
-                <li>HTML + CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-                <li>Python</li>
-                <li>C++</li>
-              </ul>
-            </div>
-            <div class="block-techs">
-              <span class="block-techs-title">Fraemworks</span>
-              <ul class="techs-list">
-                <li>React</li>
-                <li>Vue</li>
-                <li>Django</li>
-              </ul>
-            </div>
-            <div class="block-techs">
-              <span class="block-techs-title">Libraries</span>
-              <ul class="techs-list">
-                <li>AgGrid</li>
-                <li>HighCharts</li>
-                <li>MUI</li>
-                <li>GoogleAuth</li>
-                <li>Express</li>
-                <li>KOA</li>
-                <li>Cors</li>
-                <li>Redux</li>
-                <li>JQuery</li>
-              </ul>
-            </div>
-            <div class="block-techs">
-              <span class="block-techs-title">Technology</span>
-              <ul class="techs-list">
-                <li>NodeJS</li>
-                <li>Docker</li>
-                <li>WebPack</li>
-                <li>Babel</li>
-                <li>Electron</li>
-              </ul>
-            </div>
-            <div class="block-techs">
-              <span class="block-techs-title">DB's</span>
-              <ul class="techs-list">
-                <li>Redis</li>
-                <li>MongoDB</li>
-                <li>MySQL</li>
-                <li>MS SQL Server</li>
-                <li>PostgreSQL</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section class="programms">
-          <p id="section-name" class="section-title programms-title">
-            Programs I use
-          </p>
-          <div class="prog-blocks">
-            <div class="programm">
-              <img
-                class="prog-logo"
-                src="images/photoshop.svg"
-                alt="Adobe Photoshop"
-              />
-              <div class="prog-name">Adobe Photoshop</div>
-            </div>
-            <div class="programm">
-              <img
-                class="prog-logo"
-                src="images/illustrator.svg"
-                alt="Adobe Illustrator"
-              />
-              <div class="prog-name">Adobe Illustrator</div>
-            </div>
-            <div class="programm">
-              <img class="prog-logo" src="images/xd.svg" alt="Adobe XD" />
-              <div class="prog-name">Adobe XD</div>
-            </div>
-            <div class="programm">
-              <img class="prog-logo" src="images/figma.svg" alt="Figma" />
-              <div class="prog-name">Figma</div>
-            </div>
-            <div class="programm">
-              <img class="prog-logo" src="images/vscode.svg" alt="VS Code" />
-              <div class="prog-name">VS Code</div>
-            </div>
-            <div class="programm">
-              <img class="prog-logo" src="images/vs.svg" alt="Visual Studio" />
-              <div class="prog-name">Visual Studio</div>
-            </div>
-          </div>
-        </section>
-        <section class="footer">
-          <h4 class="footer-title">Thank's!</h4>
-          <button id="contacts" class="btn-contacts">show contacts</button>
-        </section>
-      </div>
+      <footer>
+        <div class="container footer__container">
+          <h4 class="footer__closing">
+            Thanks, get me in a
+            <span class="footer__closing--span">social</span>
+          </h4>
+          <ul class="footer__social">
+            <li>
+              <a target="_blank" href="https://github.com/Polyakov-itmo">
+                <img class="footer__social--img" src="img/github.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="">
+                <img
+                  class="footer__social--img"
+                  src="img/instagram.svg"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://vk.com/maksmeksmeksort">
+                <img class="footer__social--img" src="img/vk.svg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/Makesmeks">
+                <img class="footer__social--img" src="img/tg.svg" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
     </div>
-    <script src="js/script.js"></script>
   </body>
 </html>

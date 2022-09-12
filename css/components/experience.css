@@ -1,54 +1,133 @@
+@import 'variables.css';
+
 .experience {
-  width: 100%;
-  background: black;
-  /* height: 500px; */
+  min-height: 100vh;
+  padding: 80px 0 120px 0;
 }
 
-.experience-title {
-  color: rgb(60, 250, 60);
-  width: 100%;
-  text-align: center;
+.experience__title {
+  display: block;
 }
 
-.work-places {
-  padding: 30px;
-  width: 95%;
-  margin: 0 auto;
+.experience__title span {
+  font-weight: 600;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.place {
-  color: white;
+.experience__title--span {
+  background: linear-gradient(
+    121deg,
+    rgba(240, 71, 255, 1) 0%,
+    rgba(73, 255, 182, 1) 67%
+  );
+}
+
+.experience__body {
+}
+
+.experience__card {
+  margin: 40px 0;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-family: "Archivo Black", sans-serif;
-  margin: 0 0 30px 0;
-}
-
-.place:not(:last-child) {
-  padding-bottom: 30px;
-  border-bottom: 2px solid white;
-}
-
-.place-logo {
-  background-position: center center;
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  margin: 0 10px 0 0;
-}
-
-.ozna-logo {
-  background-image: url("images/ozna-logo.png");
-}
-
-.place-list {
-  margin: 20px 0 0 0;
   width: 100%;
-  list-style: square;
-  font-family: "Roboto Flex", sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.place-list li::before {
-  content: "";
+.card__img {
+  flex: 0 0 50%;
+}
+
+.card__img img {
+  height: 100%;
+  /* max-width: ; */
+}
+
+.card__info {
+  padding: 0 30px;
+}
+
+.card--side {
+  min-width: 570px;
+  max-width: 630px;
+}
+
+.work__company {
+  display: flex;
+  width: 300px;
+  align-items: center;
+}
+
+.work__name {
+  margin-right: 10px;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.work__link {
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+
+  background: rgb(71, 255, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 255, 175, 1) 0%,
+    rgba(59, 220, 254, 1) 63%
+  );
+}
+
+.work__link:hover img {
+  scale: 1.2;
+  /* border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  padding-top: 4px;
+
+  background: rgb(71, 255, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 255, 175, 1) 0%,
+    rgba(59, 220, 254, 1) 63%
+  ); */
+}
+
+.work__link--img {
+  display: block;
+  margin: 0 auto;
+  width: 20px;
+  height: 20px;
+}
+
+.work__dates {
+  text-align: center;
+  width: 300px;
+  font-size: 30px;
+  line-height: 1.3;
+  padding: 7px;
+  margin-bottom: 10px;
+}
+
+
+.work__position {
+  color: rgb(225, 225, 225);
+  font-size: 35px;
+  width: 100%;
+}
+
+.btn-tasks {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(147, 147, 147);
+  transition: color 0.2s;
+}
+
+.btn-tasks:hover {
+  color: rgb(234, 234, 234);
+  text-decoration: underline;
+  /* background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
 }

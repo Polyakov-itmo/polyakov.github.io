@@ -1,17 +1,32 @@
-.container {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  font-size: 24px;
-}
+@import 'variables.css';
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:200,300,regular,600&display=swap');
 
 .site-container {
+  font-family: 'Work Sans', 'Montserrat', sans-serif;
+  color: #fff;
   overflow: hidden;
+  width: 100%;
 }
 
-.flex {
-  display: flex;
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
+
+.dates {
+  color: black;
+  border-radius: 5px;
+  font-weight: 600;
+
+  background: rgb(71, 255, 175);
+  background: linear-gradient(
+    90deg,
+    rgba(71, 255, 175, 1) 0%,
+    rgba(59, 220, 254, 1) 63%
+  );
+}
+
 
 .btn-reset {
   border: none;
@@ -20,38 +35,40 @@
   padding: 0;
 }
 
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
+.title {
+  font-weight: 300;
+  font-size: 56px;
+  line-height: 150%;
+  color: rgba(227, 228, 230, 0.55);
+}
+
+input[type='search']::-webkit-search-decoration,
+input[type='search']::-webkit-search-cancel-button,
+input[type='search']::-webkit-search-results-button,
+input[type='search']::-webkit-search-results-decoration {
   display: none;
-}
-
-.section-title {
-  font-weight: 700;
-  font-size: 64px;
-  font-family: "Archivo Black", sans-serif;
-  width: 100%;
-  text-align: center;
-  padding: 20px 0;
-}
-
-.section-title--center {
-  text-align: center;
-  max-width: none;
-}
-
-::-webkit-scrollbar {
-  background-color: black;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 15px;
-  border: 4px solid black;
 }
 
 button:active,
 button:focus {
   outline: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* box-shadow: 0 0 2px rgb(61, 61, 61); */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  border: 4px solid black;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(172, 172, 172);
 }

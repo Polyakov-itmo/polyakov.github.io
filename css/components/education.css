@@ -1,97 +1,88 @@
 .education {
-  display: block;
-  width: 95%;
-  color: black;
-  margin: 20px auto;
-  background-color: black;
-  box-shadow: 0 0 20px black;
+  padding: 80px 0 41px 0
 }
 
-.universities {
-  padding: 30px;
+.education__body {
+  padding: 100px 0 0 0;
 }
 
 .university {
   display: flex;
-  flex-wrap: wrap;
-  color: white;
+  min-height: 170px;
+}
+
+.university__1 {
+  min-width: 200px;
+  padding: 11px auto 0 auto;
+  display: flex;
+}
+
+.university__2 {
+  padding: 0 30px 30px 30px;
+  border-left: 1px solid rgb(191, 191, 191);
+  border-right: 1px solid rgb(191, 191, 191);
+  flex-grow: 1;
+}
+
+.university__3 {
+  min-width: 200px;
+  padding: 0 0 0 30px;
+}
+
+.university__2 span {
+  display: block;
+}
+
+.university__name {
+  font-size: 44px;
+  margin: 0 0 10px 0;
+}
+
+.university__facultet {
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.university__direction {
+  font-size: 24px;
+  color: #fff;
+}
+.university__programm--link {
+  border-radius: 10px;
+  display: flex;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.2s;
   align-items: center;
-  font-family: "Archivo Black", sans-serif;
-  margin: 0 0 30px 0;
+  justify-content: center;
+  border: 2px solid #fff;
 }
 
-.university:not(:last-child) {
-  padding-bottom: 30px;
-  border-bottom: 2px solid rgb(60, 250, 60);
+.university__programm--link:hover {
+  color: rgb(88, 88, 88);
+  background-color: rgb(255, 255, 255);
 }
 
-.education-title {
-  color: white;
-
-  /* position: relative; */
-}
-/* 
-.education-title::before {
-  position: absolute;
-  top: 3px;
-  left: 3px;
-  color: rgb(60, 250, 60);
-
-  content: "Education";
+.university__dates {
+  font-size: 24px;
+  padding: 3px;
+  margin: 0 auto 20px auto;
+  height: 33px;
 }
 
-.education-title::after {
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  content: "Education";
-  color: black;
-}
- */
-.uni-logo {
-  background-position: center center;
-  background-size: cover;
-  width: 90px;
-  height: 60px;
-  border-radius: 15px;
-  margin: 0 15px 0 0;
+
+.education__title span {
+  font-weight: 600;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.itmo-logo {
-  background-image: url("images/itmo-logo.png");
-}
-
-.usatu-logo {
-  background-image: url("images/usatu-logo.png");
-}
-
-.years {
-  border-radius: 8px;
-  padding: 8px;
-  border: 2px solid rgb(60, 250, 60);
-  color: rgb(60, 250, 60);
-  margin: 0 15px 0 0;
-}
-
-.uni-name {
-  font-style: 2em;
-}
-
-.uni-direction {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  width: 100%;
-  margin: 20px 0 0 0;
-  font-size: 1em;
-}
-
-.point {
-  color: rgb(60, 250, 60);
-}
-.edu-link {
-  text-decoration: underline;
-  transition: color 0.5s;
-}
-
-.edu-link:hover {
-  color: rgb(194, 194, 194);
+.education__title--span {
+  background: linear-gradient(
+    121deg,
+    rgba(240, 71, 255, 1) 0%,
+    rgba(73, 255, 182, 1) 67%
+  );
 }
