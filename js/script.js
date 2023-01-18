@@ -9,3 +9,4 @@ document.querySelector('.menu__burger').addEventListener('click', () => {
     menuOpened = true
   }
 })
+
