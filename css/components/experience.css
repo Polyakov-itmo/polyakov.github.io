@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import "variables.css";
 
 .experience {
   padding: 80px 0 120px 0;
@@ -44,7 +44,7 @@
   display: flex;
   align-self: flex-start;
   justify-content: flex-end;
-  margin:  0 20px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .work__dates {
@@ -60,7 +60,6 @@
   flex-grow: 1;
   padding: 0 0 20px 20px;
   border-left: 2px solid grey;
-
 }
 
 .work__company {
@@ -81,21 +80,21 @@
   width: 100%;
 }
 
-.work__tasks{
+.work__tasks {
   font-size: 0.8em;
   margin-top: 20px;
   color: rgb(169, 169, 169);
 }
 
-.work__tasks li{
+.work__tasks li {
   padding-left: 20px;
   margin-top: 10px;
   position: relative;
 }
 
-.work__tasks li::before{
+.work__tasks li::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 7px;
   left: 0;
   background-color: rgb(162, 162, 162);
@@ -151,4 +150,63 @@
   /* background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+
+.work__tasks--stack {
+  display: flex;
+  padding: 10px 0;
+  flex-wrap: wrap;
+}
+
+.javascript-block {
+  background-color: yellow;
+  color: black;
+  font-weight: 700;
+}
+
+.typescript-block{
+  background-color: #1164ff;
+
+}
+
+.stack-block {
+  margin: 4px;
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.ReactJS-block {
+  background-color: #1164ff;
+  border-radius: 4px;
+}
+
+.NodeJS-block {
+  background-color: white;
+  font-weight: 700;
+  color: green;
+}
+
+.MSSQL-block {
+  background-color: white;
+  color: rgb(109, 109, 109);
+}
+
+.Postgresql-block{
+  background-color: white;
+  color: rgb(45, 108, 224);
+}
+
+.CS-block{
+  background-color: rgb(166, 47, 245);
+}
+
+.NET-block{
+  background-color: rgb(166, 47, 245);
+
+}
+
+.ASP-block{
+  background-color: rgb(45, 108, 224);
+
 }
